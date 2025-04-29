@@ -1,0 +1,21 @@
+{
+  "name": "e-comerce",
+  "version": "1.0.0",
+  "description": "primeros pasos en node",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=.env index.js",
+    "create": "node --env-file=.env collections/users.js && node --env-file=.env collections/categories.js && node --env-file=.env collections/paymentMethods.js && node --env-file=.env collections/products.js && node --env-file=.env collections/bills.js"
+  },
+  "keywords": [
+    "node",
+    "e-comerce"
+  ],
+  "author": "Camilo Penagos",
+  "license": "ISC",
+  "devDependencies": {
+    "lodash": "4.17.21",
+    "mongodb": "6.16.0"
+  }
+}
