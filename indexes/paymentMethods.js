@@ -1,5 +1,4 @@
 import { client, main } from "../helpers/db.js"
-import { insert } from "../data/paymentMethods.js"
 
 export const index = async()=> {
     const db = await main()
@@ -18,8 +17,7 @@ export const index = async()=> {
                 wiredTigerIndexConfig: 4096,
             }
         )
-
-        await insert()
+        
     } catch ({...error}) {
         console.log("ERROR paymentMethods index", error)
     } finally {

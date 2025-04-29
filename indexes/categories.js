@@ -1,5 +1,4 @@
 import { client, main } from "../helpers/db.js"
-import { insert } from "../data/categories.js"
 
 export const index = async()=> {
     const db = await main()
@@ -19,7 +18,6 @@ export const index = async()=> {
             }
         )
 
-        await insert()
     } catch ({...error}) {
         console.log("ERROR categories index", error)
     } finally {
