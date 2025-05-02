@@ -1,0 +1,16 @@
+{
+  "name": "e-comerce2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=.env index.js",
+    "createdb": "node --env-file=.env collections/initDB.js"
+  },
+  "author": "Camilo Penagos",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "mongodb": "6.16.0"
+  }
+}
